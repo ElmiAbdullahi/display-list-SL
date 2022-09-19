@@ -1,12 +1,12 @@
-export function renderCandy(candy) {
+export function renderBooks(book) {
     const li = document.createElement('li');
-    li.classList.add('candy-list');
+    li.classList.add('book-list');
 
     const pEl = document.createElement('p');
-    pEl.textContent = candy.flavor + '' + candy.type;
+    pEl.textContent = book.published + '' + book.author;
 
     const headerEl = document.createElement('h2');
-    headerEl.textContent = candy.name;
+    headerEl.textContent = book.title;
 
     li.append(headerEl, pEl);
 
